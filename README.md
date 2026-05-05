@@ -36,4 +36,4 @@ The platform helps students gain real-world insights while enabling alumni to gu
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/linked.git
+git clone https://github.com/akdrin/linkED
