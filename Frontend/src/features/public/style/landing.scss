@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap");
+
+.landing-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background:
+    radial-gradient(circle at 10% 15%, rgba(187, 247, 208, 0.18), transparent 35%),
+    radial-gradient(circle at 90% 80%, rgba(147, 197, 253, 0.2), transparent 35%),
+    linear-gradient(145deg, #0f172a, #111827 60%, #1f2937);
+  font-family: "Outfit", "Segoe UI", sans-serif;
+}
+
+.hero-card {
+  width: min(780px, 100%);
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  padding: clamp(1.5rem, 3.5vw, 3rem);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.35);
+}
+
+.pill {
+  display: inline-block;
+  border: 1px solid rgba(134, 239, 172, 0.45);
+  background: rgba(22, 101, 52, 0.22);
+  color: #bbf7d0;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+
+.hero-card h1 {
+  font-size: clamp(1.8rem, 4.2vw, 3rem);
+  color: #f8fafc;
+  line-height: 1.18;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  color: #d1d5db;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+}
+
+.cta-row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .landing-page {
+    padding: 1rem;
+  }
+
+  .hero-card {
+    border-radius: 14px;
+  }
+}

@@ -30,7 +30,7 @@ const Register = () => {
         setError("")
         const result = await handleRegister(form)
         if (result?.success) {
-            navigate("/")
+            navigate("/portal")
             return
         }
         setError(result?.message || "Unable to register")
